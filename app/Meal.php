@@ -10,4 +10,12 @@ class Meal extends Model
     {
         return $this->belongsTo(Restaurant::class);
     }
+    public function allergens()
+    {
+        return $this->belongsToMany(Allergen::class);
+    }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 }

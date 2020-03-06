@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+<h1>Restaurant List</h1>
   <div class="restaurant-index">
     <ol>
       @foreach($restaurants as $restaurant)
