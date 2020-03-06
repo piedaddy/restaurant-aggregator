@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    {{Auth::user()->name}}, you are logged in!<br>
+                    
+                    @if(Auth::user()->restaurant !== null)
+                        You are the manager of a restaurant, daaaamn.
+                    @endif
                 </div>
             </div>
         </div>
